@@ -1,0 +1,343 @@
+:root{
+    --mainDarkTheme: #18191A;
+    --secondaryDarkTheme:#242526 ;
+    --mainButtonDark: #505151;
+    --buttonTextDark: #838484;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-main{
+    background: var(--mainDarkTheme);
+}
+
+header{
+    background: var(--secondaryDarkTheme);
+    
+}
+.bg-dark-2{
+    background: var(--secondaryDarkTheme) !important;
+}
+.profile-cover{
+    width: 70vw;
+    height: 35vh;
+    border-radius: 0 0 5px 5px;
+    background: url("../image/cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.profile-picture{
+   
+    border: 4px solid var(--secondaryDarkTheme);
+    border-radius: 100%;
+    transform: translateY(-50%);
+}
+.btn-message{
+    background:  #3A3B3C;
+    color: var(--buttonTextDark);
+    
+}
+.btn-message:hover{
+    color: var(--buttonTextDark);
+    background: var(--mainButtonDark)
+}
+.btn-sections{
+    height: 100% ;
+    width: 100%;
+    color: #b0b3b8;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.btn-active{
+    color: #2B5E96 !important;
+    border-bottom: 4px solid #2E89FF !important;
+    
+    
+}
+.border-top-div{
+    border-top: 1px solid #3E3F41;
+
+}
+.border-end{
+    border-right: 1px solid #3A3B3C !important;
+}
+.min-vh-100{
+    min-height: 100vh;
+}
+.vh-30{
+    height: 30vh;
+}
+.vh-15{
+    height: 15vh;
+}
+.vh-10{
+    height: 10vh;
+}
+.vh-5{
+    height: 5vh;
+}
+/* STACKS*/
+.stack{
+    color: #e4e6eb;
+    border-radius: 15px;
+    border: 1px solid #3E3F41;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 5px;
+}
+.stack:hover{
+    background: #3A3B3C;
+    color: #e4e6eb ;
+}
+.stacks-area{
+    column-count: 2 !important;
+
+}
+
+/* some project 1-3 */
+.project-area{
+    column-count: 3;
+}
+.project{
+    
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+.project-01::after{
+    content: attr(data-title);
+    font-size: .8em;
+    text-align: center;
+    color: #e4e6eb;
+    font-weight: 600;
+    position: absolute;
+    transform: translateX(50%);
+}
+.project-02::after{
+    content: attr(data-title);
+    font-size: .8em;
+    text-align: center;
+    color: #e4e6eb;
+    font-weight: 600;
+    position: absolute;
+    transform: translateX(25%);
+}
+.project-03::after{
+    content: attr(data-title);
+    font-size: .8em;
+    text-align: center;
+    color: #e4e6eb;
+    font-weight: 600;
+    position: absolute;
+    /* transform: translateX(25%); */
+}
+.project-01{
+    background: url("../image/trivia_thumbnail.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-02{
+    background: url("../image/robotGen.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-03{
+    background: url("../image/student-teacher.png") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.project-cover{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity .3s ease-in-out;
+    color: #e4e6eb;
+}
+.btn-project{
+    background: rgba(0,0,0,.4);
+    color: #e4e6eb;
+    opacity: 1;
+}
+.btn-project:hover{
+    background: rgba(0,0,0,.4);
+}
+.project-cover:hover{
+   
+    color: #e4e6eb;
+    opacity: 1;
+}
+.caption{
+    
+    
+    color: #e4e6eb;
+    text-decoration: none;
+    font-size: .8em;
+    text-align: center;
+}
+.caption:hover{
+    text-decoration: underline;
+    color: #e4e6eb;
+}
+/* LINKS */
+.link-midia{
+    color: #4599ff;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+}
+.link-midia:hover{
+    color:#4599ff;
+    text-decoration: underline;
+}
+/* column left */
+.column-left{
+    z-index: 999;
+}
+
+/* both columns */
+.my-sticky{
+    position: sticky !important;
+    top: 0;
+}
+
+/* right column - feed */
+
+.feed-column{
+    overflow-y: scroll;
+}
+.post-profile{
+    background: url("../image/yrllan.jpg");
+    height: 55px;
+    width: 55px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-name{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.post-model{
+    color: #e4e6eb !important;
+}
+.post-date{
+    font-size: 13px;
+}
+.card-text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+}
+.midia-area{
+    height: 360px;
+    width: 100%;
+    background: #2E89FF;
+}
+.btn-like{
+    color: #4291fc;
+}
+.btn-like:hover{
+    background: #3A3B3C;
+}
+#btn-close{
+    border: 0;
+    background: none;
+}
+#btn-floating{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background:#505151;
+    position: fixed;
+
+    z-index: 999;
+    border: 0;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+}
+#btn-floating:hover{
+    background: #838484;
+}
+.btn-about {
+    background: var(--secondaryDarkTheme);
+    color: #B0B3B8;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+.btn-about:hover{
+    background: #505151;
+}
+.about-active, .about-active:hover{
+    background: #263951 !important;
+    color: #2E89FF;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+/* about */
+.about-text, .about-link{
+    color: #b0b3b8 !important;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.about-link::after{
+    content: attr(data-social);
+    font-size: 12px;
+    font-weight: 400;
+    color: #838484;
+    position: relative;
+    left: 0;
+    transform: translateY(100%);
+
+}
+
+.page-active{
+    display: flex !important;
+}
+/* chat modal */
+.chat-modal{
+    width: 400px;
+    height: 60vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 100px;
+    /* z-index: 999; */
+    display: none;
+}
+.video-fluid{
+    height: 360px;
+    width: 100%;
+    
+}
+@media (max-width: 760px)
+{
+    .container-main{
+        display: none;
+    }
+}

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="start-doc">
+
+    </div>
+    <div class="container-fluid container-main min-vh-100 p-0">
+        <header class="px-5 d-flex flex-column align-items-center  ">
+            <div class="row profile-cover">
+
+            </div>
+            <div class="row d-flex align-items-center justify-content-center  container p-0 vh-10 px-3">
+
+                <div class="col-2   vh-10">
+                    <img src="./image/yrllan.jpg" alt="" class="img-fluid profile-picture">
+                </div>
+
+                <div class="col-10  vh-10 d-flex align-items-center">
+
+                    <div class="container-fluid p-0  d-flex flex-row justify-content-between align-items-center">
+                        <div>
+                            <h1 class="text-white">
+                                Yrllan Brandão
+                            </h1>
+                        </div>
+
+
+
+                        <div>
+
+
+                            <button class="btn btn-primary" id="btn-message">
+                                <span class="iconify" data-icon="bxs:message-alt-detail" style="color: #e4e6eb;"></span>
+                                message
+                            </button>
+                            <a href="./resume.pdf" download="resume-yrllanbrandao.pdf" class="btn btn-light"> <span
+                                    class="iconify" data-icon="clarity:document-solid" style="color: #848585;"></span>
+                                Resume </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row  vh-5 container px-3 border-top-div  g-0 ">
+                <div class="col-6">
+                    <div class="d-flex justify-content-around align-items-center vh-5">
+
+                        <a href="./index.html" class=" btn-sections  fs-6 ">Post</a>
+
+
+                        <a href="#" class=" btn-sections btn-active fs-6">About</a>
+
+
+                        <a href="#" class=" btn-sections fs-6">Post</a>
+
+
+                        <a href="#" class=" btn-sections fs-6">Post</a>
+
+
+                        <a href="#" class=" btn-sections fs-6">Post</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="container px-3 mt-4 ">
+            <div class="card d-flex flex-row  bg-dark-2">
+               <div class="card-header border-0 bg-dark-2 ">
+                <div class=" d-flex flex-column gap-2 border-end p-2 " >
+                    
+                       <div class="title-section text-white ">
+                        About
+                       </div>
+                    
+                    <button class="btn btn-about about-active btn-overview" >Overview</button>
+                    
+                    <button  class="btn btn-about btn-work">Contact and basic info</button>
+                </div>
+                
+               </div>
+               <!-- mini page -->
+               <div class="card-body border-0 bg-dark-2">
+                <div class=" d-flex " id="page-overview">
+                
+
+                    <!-- overview -->
+                    <div class="area-overview d-none flex-column gap-3  page-active ">
+                        <!-- work -->
+                        <div class="line d-flex gap-2 align-items-center justify-content-start">
+                            <span class="iconify" data-icon="uil:bag" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                            <div class="about-text">
+                                Available
+                            </div>
+                        </div>
+                        <!-- graduation -->
+                        
+                        <div class="line d-flex gap-2 align-items-center justify-content-start">
+                            <span class="iconify" data-icon="fluent:hat-graduation-24-filled" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                            <div class="about-text">
+                                Cursing Computers Networks
+                            </div>
+                        </div>
+                        <!-- live in  -->
+                        <div class="line d-flex gap-2 align-items-center justify-content-start">
+                            <span class="iconify" data-icon="ant-design:home-filled" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                            <div class="about-text fw-bold">
+                                Macapá-AP
+                            </div>
+                        </div>
+                        <!-- from -->
+                        <div class="line d-flex gap-2 align-items-center justify-content-start">
+                            <span class="iconify" data-icon="fa6-solid:location-dot" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                            <div class="about-text ">
+                               From <span class="fw-bold">Macapá-AP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- working and Education -->
+                    <div class="work-area d-none flex-column gap-2 ">
+                        <!-- phone and e-mail -->
+                        <div class="title-section text-white ">
+                            Contact
+                           </div>
+                        <div class="line d-flex gap-2 align-items-center justify-content-start">
+                            
+                            <span class="iconify" data-icon="ic:baseline-email" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                            <div class="about-text ">
+                               yrllanbrandao@outlook.com
+                            </div>
+                        </div>
+                        <!-- website and social links -->
+                        <div class="d-flex align-items-start flex-column gap-2 "  >
+                            <div class="title-section text-white ">
+                                Website and social links
+                               </div>
+                               <!-- linkedin -->
+                            <div class="line d-flex gap-2 align-items-center justify-content-start">
+                                
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <span class="iconify" data-icon="akar-icons:linkedin-box-fill" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                                </div>
+                                <div class="about-text  d-flex flex-column align-items-center">
+                                   <div>
+                                    <a href="" class="about-link text-white" data-social="(Linkedin)">YrllanBrandao</a>
+                                   </div>
+                                  
+                                </div>
+                            </div>
+                            <!-- github  -->
+                            <div class="line d-flex gap-2 align-items-center justify-content-start">
+                                
+                                <div class="d-flex align-items-center justify-content-start">
+                                    <span class="iconify" data-icon="dashicons:admin-site" style="color: #b0b3b8;" data-width="24" data-height="24"></span>
+                                </div>
+                                <div class="about-text  d-flex flex-column align-items-center">
+                                   <div>
+                                    <a href="https://yrllanbrandao.me" class="about-link text-white" data-social="(website)">yrllanbrandao.me</a>
+                                   </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               </div>
+            </div>
+
+            <!-- area chat  -->
+            <button id="btn-floating">
+                <span class="iconify" data-icon="jam:write-f" style="color: #e4e6eb;" data-width="24" data-height="24">
+    
+                </span>
+    
+            </button>
+            <!-- chat form -->
+            <div class="chat-modal rounded-top bg-dark-2" id="chat">
+                <div class="chat-header d-flex justify-content-end container-fluid px-3 py-2">
+                    <button id="btn-close">
+                        <span class="iconify" data-icon="emojione-monotone:heavy-multiplication-x" style="color: #2374e1;"
+                            data-width="24" data-height="24"></span>
+                    </button>
+    
+                </div>
+    
+                <form action="https://formsubmit.co/yrllanbrandao@outlook.com"
+                    class="border-0 form-control bg-dark-2  d-flex flex-column gap-2" method="post">
+                    <div class="form-floating">
+                        <input type="text" name="name" id="name" placeholder="Name" class="form-control" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" name="lastName" id="name" placeholder="Last name" class="form-control">
+                        <label for="name">Last name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" name="email" max="11" required pattern="(.+)@(\w+).(\w+)" class="form-control"
+                            placeholder="E-mail">
+                        <label for="phone">E-mail</label>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <textarea name="content" id="content" cols="20" rows="10" class="form-control"></textarea>
+                            <br>
+                            <span id="max-length" class="text-white fw-bold float-end">0 of 400</span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end container-fluid">
+                        <button type="submit" class="btn btn-primary form-control">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <script src="./javascript/chat.js"></script>
+    <script src="./javascript/about.js"></script>
+</body>
+
+</html>
