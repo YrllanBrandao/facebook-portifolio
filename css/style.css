@@ -15,6 +15,7 @@
 
 header{
     background: var(--secondaryDarkTheme);
+    padding: 0 !important;
     
 }
 .bg-dark-2{
@@ -319,13 +320,20 @@ header{
     width: 100%;
     
 }
-
-
+/* btn area */
+.btn-area{
+    display: flex;
+    gap: 5px;
+}
 @media (min-width:760px)
-{
+{   
+    header{
+        padding: 0 3em;
+    }
     .profile-area{
         height: inherit;
     }
+    
     .basic-info{
         flex-direction: row;
         justify-content: space-between;
@@ -367,4 +375,5 @@ header{
         position: absolute;
         /* transform: translateX(25%); */
     }
+
 }
