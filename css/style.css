@@ -118,33 +118,7 @@ header{
     height: 250px;
     border-radius: 5px;
 }
-.project-01::after{
-    content: attr(data-title);
-    font-size: .8em;
-    text-align: center;
-    color: #e4e6eb;
-    font-weight: 600;
-    position: absolute;
-    transform: translateX(50%);
-}
-.project-02::after{
-    content: attr(data-title);
-    font-size: .8em;
-    text-align: center;
-    color: #e4e6eb;
-    font-weight: 600;
-    position: absolute;
-    transform: translateX(25%);
-}
-.project-03::after{
-    content: attr(data-title);
-    font-size: .8em;
-    text-align: center;
-    color: #e4e6eb;
-    font-weight: 600;
-    position: absolute;
-    /* transform: translateX(25%); */
-}
+
 .project-01{
     background: url("../image/trivia_thumbnail.png") ;
     background-size: cover;
@@ -241,6 +215,7 @@ header{
     font-weight: 600;
 
 }
+
 .post-model{
     color: #e4e6eb !important;
 }
@@ -332,12 +307,10 @@ header{
 }
 /* chat modal */
 .chat-modal{
-    width: 400px;
-    height: 60vh;
+    width: 90vw;
+    height: 100vh;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 100px;
+    top: 0;
     /* z-index: 999; */
     display: none;
 }
@@ -356,5 +329,42 @@ header{
     .basic-info{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .chat-modal{
+        width: 400px;
+        height: 60vh;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 100px;
+        /* z-index: 999; */
+        display: none;
+    }
+    .project-01::after{
+        content: attr(data-title);
+        font-size: .8em;
+        text-align: center;
+        color: #e4e6eb;
+        font-weight: 600;
+        position: absolute;
+        transform: translateX(50%);
+    }
+    .project-02::after{
+        content: attr(data-title);
+        font-size: .8em;
+        text-align: center;
+        color: #e4e6eb;
+        font-weight: 600;
+        position: absolute;
+        transform: translateX(25%);
+    }
+    .project-03::after{
+        content: attr(data-title);
+        font-size: .8em;
+        text-align: center;
+        color: #e4e6eb;
+        font-weight: 600;
+        position: absolute;
+        /* transform: translateX(25%); */
     }
 }
