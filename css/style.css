@@ -325,7 +325,15 @@ header{
     display: flex;
     gap: 5px;
 }
-@media (min-width:760px)
+@media (min-width: 576px)
+{
+    .basic-info{
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid red;
+    }
+}
+@media (min-width:768px)
 {   
     header{
         padding: 0 3em;
@@ -375,5 +383,7 @@ header{
         position: absolute;
         /* transform: translateX(25%); */
     }
-
+    .basic-info{
+        flex-direction: column;
+    }
 }
