@@ -387,3 +387,10 @@ header{
         flex-direction: column;
     }
 }
+@media (min-width: 992px)
+{
+    .basic-info{
+        flex-direction: row;
+     
+    }
+}
