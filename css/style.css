@@ -323,7 +323,9 @@ header{
 /* btn area */
 .btn-area{
     display: flex;
+    flex-direction: row;
     gap: 5px;
+    border: 1px solid red;
 }
 @media (min-width: 576px)
 {
@@ -332,7 +334,12 @@ header{
         align-items: center;
         
     }
+    .btn-area{
+        flex-direction: row;
+    }
+    
 }
+
 @media (min-width:768px)
 {   
     header{
