@@ -330,7 +330,7 @@ header{
     .basic-info{
         flex-direction: column;
         align-items: center;
-        border: 2px solid red;
+        
     }
 }
 @media (min-width:768px)
