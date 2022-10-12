@@ -315,7 +315,18 @@ header{
     transform: translateY(100%);
 
 }
+/* basic */
+.basic-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-area{
+    height: 30vh;
+}
 
+/*  */
 .page-active{
     display: flex !important;
 }
@@ -335,9 +346,15 @@ header{
     width: 100%;
     
 }
-@media (max-width: 760px)
+
+
+@media (min-width:760px)
 {
-    .container-main{
-        display: none;
+    .profile-area{
+        height: inherit;
+    }
+    .basic-info{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
